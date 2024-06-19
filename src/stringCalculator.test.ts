@@ -18,3 +18,9 @@ test('return the sum of two number', ()=>{
     expect(add("5,7")).toBe(12);
 })
 
+// test case for the multiple numbers
+test('returns the sum of multiple numbers ', () => {
+    expect(add("1,2,3")).toBe(6);
+    expect(add("5,7,8,2")).toBe(22);
+  });
+  
