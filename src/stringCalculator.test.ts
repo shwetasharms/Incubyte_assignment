@@ -29,3 +29,8 @@ test('returns the sum of numbers for  new lines', () => {
     expect(add("1\n2,3")).toBe(6);
     expect(add("5\n7\n8,2")).toBe(22);
 });
+
+
+test('throw an error for  negative numbers',()=>{
+    expect(()=>add("-2,-4,5")).toThrow("Negative number  not allowed");
+})
